@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="icoins/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lista De Musica En LocalStore</title>
+</head>
+<body onload="cargar()">
+
+    <nav id="navegacion" class="navbar navbar-expand-lg navbar-dark bg-primary barra">
+        <div class="container-fluid">
+            <a class="navbar-brand MusicLocalStore" href="index.html"><i class="fas fa-play-circle"></i>MusicLocalStore</a>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <h1 id="titulo">Lista de Musica en LocalStore</h1><br>
+        <form id="musica-form">
+            <input type="text" class="form-control" id="musica" placeholder="Nombre de la Canción"><br>
+            <input type="text" class="form-control" id="artista" placeholder="Artista"><br>
+            <input type="text" class="form-control" id="album" placeholder="Album"><br>
+            <input type="text" class="form-control" id="año" placeholder="Año de Lanzamiento"><br>
+            <input type="text" class="form-control" id="codigo" placeholder="Codigo de la Canción"><br>
+            <button type="submit" class="btn-light form-control guardar"><i class="fas fa-save colorSave"></i> Guardar Musica</button>
+        </form>
+        <br>
+        <table class="table table-hover">
+            <thead>
+                    <tr class="table-primary">
+                    <th>Nombre</th>
+                    <th>Artista</th>
+                    <th>Album</th>
+                    <th>Año</th>
+                    <th>Codigo</th>
+                    <th></th>
+                    </tr>
+            <tbody id="musica-list"></tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.shuffleLetters.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/musica.js"></script>
+</body>
+</html>
